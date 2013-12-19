@@ -1,0 +1,10 @@
+This is a very basic site for a business website.
+
+Sections include:
+
+Header
+About
+Image display (rotation through specified image files)
+Contact
+
+Image display jquery script credit:  http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/
