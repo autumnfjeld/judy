@@ -65,11 +65,13 @@ li {
 
 .atop{
   padding: 15px;  
+  font-size: 12px;
   color: #142C5F;
 }
 
 .atop:visited {
   text-align: inherit;
+  font-size: inherit;
   color: inherit;
 } 
 
