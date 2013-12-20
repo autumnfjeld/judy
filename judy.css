@@ -104,5 +104,19 @@ li {
   color: #4D4D4D;
 }
 
+#rotating-item-wrapper {
+  position: relative;
+  width: 650px;
+  height: 347px; 
+  padding-bottom: 20px;
+  margin: auto 0px;
+
+}
+.rotating-item {
+  display: none;
+  position: absolute;
+  margin: auto 0px;
+}
+
 
 
