@@ -64,7 +64,8 @@ li {
 } 
 
 .atop{
-  padding: 15px;  
+  padding: 15px; 
+  padding-top: 30px; 
   font-size: 12px;
   color: #142C5F;
 }
@@ -76,7 +77,7 @@ li {
 } 
 
 .container {
-  position: relative;
+  position: relative;  /* This positions the container how??? only for a reference for .bottom??*/
   min-height: 200px; 
   vertical-align: center;
   overflow: hidden;
@@ -108,16 +109,27 @@ li {
 
 #rotating-item-wrapper {
   position: relative;
-  width: 650px;
+  width: 400px;
   height: 347px; 
   padding-bottom: 20px;
-  margin: auto 0px;
-
+  margin: 0 auto;
 }
+
+/* BELOW: the absolute prevents mulitple images from displaying 
+I think because absolute forces the pics on top of each other instead of floating
+above/below each other as they appear/dissapear */
 .rotating-item {
   display: none;
-  position: absolute;
-  margin: auto 0px;
+  position: absolute;  
+  top: 0;
+  left: 0;
+}
+
+.cycle-slideshow {
+
+}
+.cycle-overlay {
+
 }
 
 

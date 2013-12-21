@@ -2,13 +2,19 @@
 <html>
 	<head>
 	  <title>Kennedy Home Management</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-		<script src="http://malsup.github.com/jquery.cycle2.carousel.js"></script> 
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>    
+		<script type='text/javascript' src='js/infinite-rotator.js'></script>		
 	  <link rel="stylesheet" href="judy.css">
 	  <link rel="icon" href="images/favicon.ico">
 	  <!--[if lt IE 9]>  <script src="dist/html5shiv.js"></script> <![endif]-->
 	</head>
+	<script>
+	  $(document).ready(function() {
+	    $("#id_submit").on('click',function() {
+	     alert( "Test!" );
+	    });
+	  });
+	</script>
 	<body>
 		<header>
 			<a name="top"></a>
@@ -30,36 +36,17 @@
 	
 		<div class="container altcolor">
 			<a name="experience"><h2> Experience </h2></a>
-
-			<div class='cycle-slideshow'   
-				data-cycle-fx='carousel'
-    		data-cycle-speed="5000"
-    		data-cycle-carousel-fluid='true'	
-    		carousel-slide-dimension='400' >
-
-    		<!-- empty element for overlay -->
-    		<div class="cycle-overlay"></div>
-
-					<img src="images/house1.jpg" width="400" height="347"
-					 	data-cycle-title=" <br> House 1" 
-        		data-cycle-desc="Simple renovation and quick turnaround">
-		      <img src="images/house2.jpg" alt="house 2" width="400" height="347"
-		      	data-cycle-title="<br>House 2" 
-        		data-cycle-desc="Major remodel">
-		      <img src="images/house3.jpg" alt="house 3" width="400" height="347"
-		      	data-cycle-title=" <br> House 3" 
-        		data-cycle-desc="">
-		      <img src="images/house4.jpg" alt="house 4" width="400" height="347" 
-		      	data-cycle-title=" <br> House 4" 
-        		data-cycle-desc="">
-		      <img src="images/house5.jpg" alt="house 5" width="400" height="347" 
-		      	data-cycle-title=" <br> House 5" 
-        		data-cycle-desc="">		      
-		      <img src="images/house6.jpg" alt="house 6" width="400" height="347"     
-		      	data-cycle-title=" <br> House 6" 
-        		data-cycle-desc="">		  
-			</div>
-			<br>
+				<!-- START: Rotating Images -->
+				<div id="rotating-item-wrapper">
+					<img src="images/house1.jpg" alt="house 1" class="rotating-item" width="400" height="347" />
+		      <img src="images/house2.jpg" alt="house 2" class="rotating-item" width="400" height="347" />
+		      <img src="images/house3.jpg" alt="house 3" class="rotating-item" width="400" height="347" />
+		      <img src="images/house4.jpg" alt="house 4" class="rotating-item" width="400" height="347" />
+		      <img src="images/house5.jpg" alt="house 5" class="rotating-item" width="400" height="347" />
+		      <img src="images/house6.jpg" alt="house 6" class="rotating-item" width="400" height="347" />    
+					<p style="display:none;">Source code and instructions at: <a href="http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/">Infinite Loop: Rotating Images Using jQuery (JavaScript)</a><br/>by <a href="http://trendmedia.com/">San Francisco WordPress website designers and developers - TrendMedia</a></p>
+				</div>
+				<!-- END: Rotating images images -->
 			<div class='bottom'> <a class="atop" href="#top">Top</a> </div>
 	  </div>
 
